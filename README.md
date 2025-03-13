@@ -21,3 +21,4 @@ A **feature-rich** task management application built with **React**, **Redux**, 
 - **State Management:** Redux Toolkit
 - **UI Libraries:** React Icons, React Toastify
 - **Deployment:** Firebase Hosting / Vercel / Netlify
+- **Frontend:** React, Redux, React Router, Tailwind

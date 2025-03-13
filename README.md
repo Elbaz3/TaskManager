@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Task Manager App  
 
 A **feature-rich** task management application built with **React**, **Redux**, and **Firebase**. Designed to help users organize tasks, track issues, and enhance productivity with real-time updates and a user-friendly interface.  
@@ -22,3 +23,6 @@ A **feature-rich** task management application built with **React**, **Redux**, 
 - **UI Libraries:** React Icons, React Toastify  
 - **Deployment:** Firebase Hosting / Vercel / Netlify  
 
+=======
+# TaskManager
+>>>>>>> d45b429 (Initial commit)

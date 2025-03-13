@@ -3,7 +3,6 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom"
 import Profile from './pages/Profile'
 import Missing from './pages/Missing'
 import Problems from './pages/Problems'
-import Task from './pages/Task'
 import Categories from './pages/Categories'
 import Signup from './pages/Signup'
 import Login from './pages/Login'
@@ -60,7 +59,6 @@ const App = () => {
             <main className="bg-[#1E1E2E] flex flex-col flex-1/2">
              <Routes >
                 <Route path="/" element={<Home />} />
-                <Route path="/task" element={<Task />} />
                 <Route path="/addtask" element={<AddTask />} />
                 <Route path="/categories" element={<Categories />} />
                 <Route path="/problems" element={<Problems />} />

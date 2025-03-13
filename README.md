@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # 🚀 Task Manager App  
 
 A **feature-rich** task management application built with **React**, **Redux**, and **Firebase**. Designed to help users organize tasks, track issues, and enhance productivity with real-time updates and a user-friendly interface.  
@@ -24,19 +23,3 @@ A **feature-rich** task management application built with **React**, **Redux**, 
 - **UI Libraries:** React Icons, React Toastify  
 - **Deployment:** Firebase Hosting / Vercel / Netlify  
 
-=======
-# TaskManager
->>>>>>> d45b429 (Initial commit)
-=======
-# TaskManager
-=======
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> 52b7d86 (Initial commit)
->>>>>>> a744ab3 (Fix Task.jsx import issue)

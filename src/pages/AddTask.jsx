@@ -33,7 +33,6 @@ const AddTask = () => {
     dispatch(fetchTasks());
     setTitle('')
     setDeadline('')
-    setStatus('')
     setContent('')
   }
 

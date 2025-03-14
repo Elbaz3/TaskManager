@@ -22,7 +22,7 @@ const Problems = () => {
   async function handleSubmit(e) {
     e.preventDefault()
     if (problem.length > 0) {
-      await addProblem({ text: problem, solved: false}, showToast)
+      await addProblem({ text: problem.trim(), solved: false}, showToast)
       setProblem('')
       dispatch(fetchProblems());
     }

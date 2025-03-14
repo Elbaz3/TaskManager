@@ -15,8 +15,8 @@ const Signup = () => {
 
 
   const userDetails = {
-    firstName,
-    lastName
+    firstName: firstName.trim(),
+    lastName: lastName.trim()
   }
 
   async function handleSubmit (e) {

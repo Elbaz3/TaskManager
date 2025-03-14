@@ -23,11 +23,11 @@ const AddTask = () => {
   async function handleSubmit  (e) {
     e.preventDefault()
     const details = {
-      title,
+      title: title.trim(),
       deadline,
       status,
       priority,
-      content
+      content: content.trim()
     }
     await addTaskToFireStore(details, showToast)
     dispatch(fetchTasks());

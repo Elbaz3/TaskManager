@@ -44,9 +44,7 @@ export const login = async (email, password, showToast, navigate) => {
       if (showToast) showToast("Loged in successfully!", "success");
       navigate('/')
    } catch (error) {
-      if (showToast) showToast(error.message, "error");
-      
-
+      if (showToast) showToast(error.code.split('/')[1].split('-').join(" "), "error");
    }
 
 }

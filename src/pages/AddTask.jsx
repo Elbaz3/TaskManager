@@ -13,9 +13,9 @@ const AddTask = () => {
   const dispatch = useDispatch()
   const showToast = (message, type = "success") => {
     if (toast[type]) {
-      toast[type](message);
+      toast[type](message, { autoClose: 1000 });
     } else {
-      toast(message); 
+      toast(message, { autoClose: 1000 }); 
     }
   };
 

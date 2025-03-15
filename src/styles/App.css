@@ -77,7 +77,7 @@ select {
     }
 
 .custom-btn {
-      @apply bg-blue-600/50 text-amber-50 px-4 py-1 rounded-md hover:bg-blue-600/70 max-sm:text-sm
+      @apply bg-blue-600/50 text-amber-50 px-4 py-1 rounded-md hover:bg-blue-600/70 max-sm:text-sm max-sm:px-2
 }
 
 .inp {

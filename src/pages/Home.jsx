@@ -50,7 +50,7 @@ return (
       </div>
     </div>
     <div className="welcom">
-      <h1 className='text-3xl text-'>{`Welcome back ${username} !`}</h1>
+      <h1 className='text-3xl max-sm:text-[20px] w-full text-center'>{`Welcome back ${username} !`}</h1>
     </div>
     <div className="content flex flex-col items-center gap-6 sm:flex-row sm:justify-evenly w-full">
       <div className='flex flex-col gap-10'>

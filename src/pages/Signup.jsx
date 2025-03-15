@@ -37,6 +37,11 @@ const Signup = () => {
 
   async function handleSubmit (e) {
     e.preventDefault()
+    if (!validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword) {
+      showToast("Please fill the form correctly", "error")
+      return
+    }
+
     await signUP(email, password, userDetails, showToast)
   }
 

@@ -26,9 +26,9 @@ const Home = () => {
 
 
 return (
-<section className="home relative w-full overflow-hidden h-screen">
+<section className="home relative w-full overflow-hidden min-h-screen">
   <Header />
-  <div className="container flex flex-col gap-6 items-center relative h-full w-full max-w-none">
+  <div className="container flex flex-col gap-6 items-center relative min-h-full justify-start w-full overflow-auto max-w-none">
     <div className="section relative w-full overflow-hidden h-[50px] bg-blue-900/50 flex items-center">
       <div className="absolute scrollP max-w-[100%] flex ">
         <ul className=" gap-1.5 min-w-[100%] flex  flex-shrink-0 justify-between items-center">

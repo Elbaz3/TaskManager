@@ -39,7 +39,7 @@ const App = () => {
         });
       
         return () => unsub();
-      }, [dispatch, navigate, location.pathname]); // Add dependencies to ensure effect runs on location change
+      }, [dispatch, navigate, location.pathname]); 
 
     
   return (

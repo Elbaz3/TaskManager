@@ -42,7 +42,7 @@ const Header = () => {
                         <h1 className="text-2xl font-bold">Task Manager</h1>
                         {user ?
                               (<div className="signed flex gap-4 mr-6">
-                                    <Link to="/peofile" ><FaUserCircle className="text-gray-500 text-2xl" /></Link>
+                                    <Link to="/profile" ><FaUserCircle className="text-gray-500 text-2xl" /></Link>
                                     <Link to='/login' onClick={handleLogOut} className='text-red-600'>Log Out</Link>
                               </div>
                               ) : (

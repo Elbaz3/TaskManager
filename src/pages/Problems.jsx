@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { addProblem, solvedProblem } from '../firebase/firebase'
+import { addProblem, solvedProblem, deleteProblem } from '../firebase/firebase'
 import { fetchProblems, resetPstatus } from '../StateSlices/tasksSlice'
 import Button from '../components/Button'
 import { toast } from 'react-toastify'
@@ -32,6 +32,10 @@ const Problems = () => {
     solvedProblem(id, showToast)
     dispatch(fetchProblems());
   }
+  function handleDelete(id) {
+    deleteProblem(id, showToast)
+    dispatch(fetchProblems())
+  }
 
   return (
     <section className='flex flex-col gap-10 p-8 items-center'>
@@ -48,6 +52,7 @@ const Problems = () => {
               <div key={problem.id} className="flex gap-1 items-center justify-between bg-gray-800 text-white p-3 rounded-lg mb-2">
                 <p className='flex-1/2'>{problem.text}</p>
                 <Button onClick={() => handleSolved(problem.id)} content='Solved' color='green' />
+                <Button onClick={() => handleDelete(problem.id)} content='delete' color='red' />
               </div>
             ))
           ) : (

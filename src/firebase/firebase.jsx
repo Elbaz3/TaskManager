@@ -225,3 +225,14 @@ export const solvedProblem = async (id, showToast) => {
    if (showToast) showToast("good job", "success")
 
 }
+export const deleteProblem = async (id, showToast) => {
+   const user = auth.currentUser
+   if (!user) {
+      if (showToast) showToast("please sign in first", "failed")
+      return
+   };
+   const problemRef =  doc(db, `users/${user.uid}/problems`, id)
+   await deleteDoc(problemRef)
+   if (showToast) showToast("deleted", "success")
+
+}

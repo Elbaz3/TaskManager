@@ -4,7 +4,7 @@ import { signUP } from '../firebase/firebase'
 import { toast } from 'react-toastify'
 
 
-const NAME_REGEX = /^[A-Za-z]{3,12}$/
+const NAME_REGEX = /^[\p{L}\p{M}]{3,12}$/u;
 const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const PASSWORD_REGEX = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/
 

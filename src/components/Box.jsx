@@ -13,9 +13,9 @@ const Box = ({title, content, deadline, id, overlay, status, priority}) => {
       const ends = deadline.split('-').reverse().slice(0, 2).join('.')
       const showToast = (message, type = "success") => {
         if (toast[type]) {
-          toast[type](message);
+          toast[type](message, { autoclose: 2000 });
         } else {
-          toast(message); 
+          toast(message, { autoclose: 2000 }); 
         }
       };
       function handleMenu () {

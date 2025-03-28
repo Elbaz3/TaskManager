@@ -100,7 +100,7 @@ export const getUserName = async () => {
    return new Promise((resolve, reject) => {
       const unsub = onAuthStateChanged(auth, async (user) => {
          if (!user) {
-            resolve(""); // Return an empty string if no user is found
+            resolve(""); 
             return;
          }
 
@@ -109,9 +109,9 @@ export const getUserName = async () => {
             const userSnap = await getDoc(userRef);
 
             if (userSnap.exists()) {
-               resolve(userSnap.data().name); // Get the name field
+               resolve(userSnap.data().name); 
             } else {
-               resolve(""); // Return empty if user doc doesn't exist
+               resolve(""); 
             }
          } catch (error) {
             console.error("Error fetching user name:", error);

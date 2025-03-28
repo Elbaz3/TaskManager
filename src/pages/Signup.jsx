@@ -26,7 +26,7 @@ const Signup = () => {
   const [ confirmPasswordFocus, setConfirmPasswordFocus ] = useState(false)
   
   const showToast = (message, type) => {
-    toast[type](message, { autoClose: 1000 })
+    toast[type](message, { autoClose: 2000 })
   }
 
 

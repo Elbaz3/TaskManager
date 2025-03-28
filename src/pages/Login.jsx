@@ -7,7 +7,7 @@ const Login = () => {
   const navigate = useNavigate()
   
   const showToast = (message, type) => {
-    toast[type](message, { autoClose: 1000 })
+    toast[type](message, { autoClose: 2000 })
   }
   const [ email, setEmail ] = useState('')
   const [ password, setPassword ] = useState('')

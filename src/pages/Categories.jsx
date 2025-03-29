@@ -55,7 +55,7 @@ import { Link } from 'react-router-dom'
   return (
      status === 'loading' ? (<h1 className="msg">Loading...</h1> )
      : status === 'failed' ? (<h1 className="msg">Error loading tasks</h1>)
-     : !sortedTasks.length ? (<> <h1 className="msg">No Taks Yet</h1> <Link className="text-blue-500 w-full text-center text-xl" to='/addtask'>go add some</Link> </>)
+     : !sortedTasks.length ? (<> <h1 className="msg">No Tasks Yet</h1> <Link className="text-blue-500 w-full text-center text-xl" to='/addtask'>go add some</Link> </>)
      :
     (<section className="">
       <h1 className="w-full text-center py-6 text-3xl text-blue-400">Tasks</h1>

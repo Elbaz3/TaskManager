@@ -13,7 +13,7 @@ A **feature-rich** task management application built with **React**, **Redux**, 
 📊 **User Dashboard** – View user profiles, completed tasks, and solved problems.  
 🎨 **Modern UI** – Styled with Tailwind CSS for a sleek, polished look.  
 🔔 **Notifications** – Get instant alerts for important actions (React Toastify).
-🌐 **SaaS Model** – Fully online service with user accounts, task management, and real-time update
+🌐 **SaaS Model** – Fully online service with user accounts, task management, and real-time updates.
 
 ## 🛠️ Tech Stack
 
